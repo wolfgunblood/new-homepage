@@ -1,0 +1,32 @@
+.article-container{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+
+    .article-img{
+        object-fit: contain;
+        width: 90px;
+    }
+    .article-content{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+
+        h1{
+            margin: 0;
+            color:hsl(233, 8%, 79%)
+        }
+        h3{
+            margin: 0;
+            font-size: 18px;
+            &:hover{
+                color: hsl(5, 85%, 63%);
+                cursor: pointer;
+            }
+        }
+        p{
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+}

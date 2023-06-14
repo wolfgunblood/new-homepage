@@ -20,4 +20,6 @@ const data = [
         header: "The Growth of Gaming",
         content: "How the pandemic has sparked fresh opportunities.",
     },
-]
+];
+
+export default data;
