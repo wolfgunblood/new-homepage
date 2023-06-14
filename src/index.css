@@ -12,14 +12,20 @@
   -webkit-text-size-adjust: 100%;
 }
 
+*{
+  box-sizing: border-box; /* Adds Padding also in dimensions*/
+}
 
 
 body {
+  background-color: hsl(36, 100%, 99%);
   margin: 0;
   height: 100vh;
+  /* width: 100vw; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  /* padding: 5rem; */
   overflow: hidden;
   
 }

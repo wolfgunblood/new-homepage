@@ -1,8 +1,15 @@
 import React from 'react'
+import "./App.scss"
+import NavBar from './components/Navbar/NavBar'
+import Hero from './components/Hero/Hero'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className='app'>
+      <NavBar />
+      <Hero />
+    </div>
+
   )
 }
 
