@@ -20,16 +20,16 @@ const Hero = () => {
                 <h2>New</h2>
                 <ul>
                     <li>
-                        <p>Hydrogen VS Electric Cars</p>
-                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                        <p className='para-head'>Hydrogen VS Electric Cars</p>
+                        <p className='para-content'>Will hydrogen-fueled cars ever catch up to EVs?</p>
                     </li>
                     <li>
-                        <p>The Downsides of AI Artistry</p>
-                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                        <p className='para-head'>The Downsides of AI Artistry</p>
+                        <p className='para-content'>What are the possible adverse effects of on-demand AI image generation?</p>
                     </li>
                     <li>
-                        <p>Is VC Funding Drying Up?</p>
-                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                        <p className='para-head'>Is VC Funding Drying Up?</p>
+                        <p className='para-content'>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                     </li>
                 </ul>
             </div>

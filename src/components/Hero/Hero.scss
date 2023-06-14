@@ -2,38 +2,95 @@
     display: flex;
     gap: 20px;
 
-    .hero-left{
+    .hero-left {
         flex: 2;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             flex: 1;
             object-fit: contain;
         }
-        .hero-left-bottom{
+
+        .hero-left-bottom {
             flex: 1;
             display: flex;
+            gap: 90px;
 
-            .bright-future-left{
+            .bright-future-left {
                 flex: 1;
+                font-size: 48px;
+                margin: 0;
+                line-height: 48px;
             }
-            .bright-future-right{
+
+            .bright-future-right {
                 flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+                p{
+                    margin: 0;
+                }
+                button{
+                    width: 50%;
+                    padding: 1rem 2rem;
+                    background-color: hsl(35, 77%, 62%);
+                    color: hsl(36, 100%, 99%);
+                    font-size: 15px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
             }
         }
     }
+
     .hero-right {
 
         flex: 1;
+        padding: 2rem;
+        background-color: hsl(240, 100%, 5%);
+
+        h2 {
+            margin: 0;
+            font-weight: 800;
+            color: hsl(35, 77%, 62%);
+        }
 
         ul {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 30px;
+            padding: 0;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                p {
+                    margin: 0;
+
+                }
+
+                .para-head {
+                    color: hsl(36, 100%, 99%);
+                    font-size: 18px;
+                    font-weight: 800;
+                }
+                .para-content{
+                    color: hsl(233, 8%, 79%);
+                    font-size: 15px;
+                    font-weight: 400;
+
+                }
+            }
         }
 
     }
