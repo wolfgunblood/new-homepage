@@ -31,9 +31,12 @@
 }
 
 
+.btn-ham{
 
-.nav-hamburger {
     display: none;
+    .nav-hamburger {
+        display: none;
+    }
 }
 
 
@@ -44,6 +47,7 @@
 
 @media screen and (max-width: 375px) {
     .btn-ham {
+        display: flex;
         background-color: transparent;
 
         cursor: pointer;
