@@ -1,7 +1,7 @@
 .hero-container {
     display: flex;
     gap: 20px;
-    
+
 
     .hero-left {
         flex: 2;
@@ -23,8 +23,9 @@
 
             .bright-future-left {
                 flex: 1;
-                
+
                 font-size: 48px;
+                font-weight: 800;
                 margin: 0;
                 line-height: 48px;
             }
@@ -35,10 +36,14 @@
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 20px;
-                p{
+
+                p {
                     margin: 0;
+                    font-size: 15px;
+                    font-weight: 400;
                 }
-                button{
+
+                button {
                     width: 50%;
                     padding: 1rem;
                     background-color: hsl(5, 85%, 63%);
@@ -50,7 +55,7 @@
                     letter-spacing: 0.2em;
                     transition: 0.1s all ease-in-out;
 
-                    &:hover{
+                    &:hover {
                         background-color: hsl(240, 100%, 5%);
                     }
                 }
@@ -69,36 +74,38 @@
             font-weight: 800;
             color: hsl(35, 77%, 62%);
         }
-        
+
         ul {
             list-style: none;
             display: flex;
             flex-direction: column;
             gap: 30px;
             padding: 0;
-            
+
             li {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                
+
                 p {
                     margin: 0;
 
                 }
-                
+
                 .para-head {
                     color: hsl(36, 100%, 99%);
                     font-size: 18px;
                     font-weight: 800;
                     cursor: pointer;
                     transition: 0.1s all ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         color: hsl(35, 77%, 62%);
-                        
+
                     }
                 }
-                .para-content{
+
+                .para-content {
                     color: hsl(233, 8%, 79%);
                     font-size: 15px;
                     font-weight: 400;
@@ -108,4 +115,51 @@
         }
 
     }
+}
+
+@media (max-width: 375px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .hero-left {
+            flex: 1;
+            img {
+                width: 300px;
+                height: 300px;
+                // flex: 1;
+                object-fit: contain;
+            }
+
+            .hero-left-bottom {
+                flex-direction: column;
+                gap: 10px;
+
+                .bright-future-left {
+                    width: 80%;
+                    font-size: 32px;
+                    line-height: 32px;
+                    // text-align: center;
+                }
+
+                .bright-future-right {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+
+        .hero-right {
+
+            flex: 1;
+
+            ul {
+                gap: 10px;
+            }
+        }
+    }
+
 }

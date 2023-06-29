@@ -10,19 +10,105 @@
         height: 30px;
     }
 
-    ul {
+    .nav-list {
         list-style: none;
         display: flex;
         gap: 20px;
         // margin: 0;
         align-items: center;
-        li{
+
+        li {
             font-size: 15px;
             cursor: pointer;
-            &:hover{
-                color:hsl(5, 85%, 63%);
+
+            &:hover {
+                color: hsl(5, 85%, 63%);
 
             }
         }
     }
+
+}
+
+
+
+.nav-hamburger {
+    display: none;
+}
+
+
+.smallscreen-overlay {
+    display: none;
+}
+
+
+@media screen and (max-width: 375px) {
+    .btn-ham {
+        background-color: transparent;
+
+        cursor: pointer;
+        border: none;
+
+        .nav-hamburger {
+            display: flex;
+
+        }
+    }
+
+    .nav-container {
+
+        .nav-list {
+            display: none;
+        }
+    }
+
+    .smallscreen-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        width: 100vw;
+
+        background-color: rgba(0, 0, 0, 0.5);
+
+        .small-menu {
+            background-color: hsl(36, 100%, 99%);
+            width: 60vw;
+            height: 100vh;
+            // padding: 2rem;
+
+            // justify-content: center;
+
+            position: absolute;
+
+            .btn-close {
+                position: absolute;
+                top: 20px;
+                right: 10px;
+
+                background-color: transparent;
+
+                cursor: pointer;
+                border: none;
+            }
+
+
+            .small-nav-list {
+                list-style: none;
+                position: absolute;
+                top: 150px;
+                // left: 7px;
+                // padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+
+                li {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
 }
